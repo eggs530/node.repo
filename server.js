@@ -34,7 +34,7 @@ var server = http.createServer(function(request, response){
     response.setHeader('Content-Type', 'text/css; charset=utf-8')
     response.write('body{background-color: #ddd;}这是css执行的{color: red;}')
     response.end()
-  }else if(path == '/main,js'){
+  }else if(path == '/main.js'){
     response.setHeader('Content-Type', 'text/javascript; charset=utf-8')
     response.write('alert("这是JS执行的")')
     response.end()
